@@ -1,0 +1,1 @@
+// Make it into a single page application where the page has an arrow for flipping the pages like with newspaper.

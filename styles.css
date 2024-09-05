@@ -1,0 +1,73 @@
+body {
+    background-color: yellow;
+    font-family: monospace;
+    margin: 0;
+}
+
+h1 {
+    word-spacing: -5px;
+    color: rgb(49, 48, 49);
+    text-align: center;
+    letter-spacing: -2px;
+    padding: 20px;
+    text-decoration:1px solid rgb(75, 70, 74) underline;
+    text-transform: lowercase;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    word-spacing: -3px;
+    color: rgb(90, 77, 77);
+    text-align: center;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    column-width: 10em;
+    column-rule: 1px solid rgb(75, 70, 74);
+    column-gap: 20px;
+    column-fill: balance;
+}
+
+.column p {
+    margin: 0;
+}
+
+@media (min-width: 660px)  {
+    .content {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 659px) {
+    .content {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 439px) {
+    .content {
+        column-count: 1; /* Single column on very small screens */
+    }
+}
+
+p, ul {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0 20px;
+    word-spacing: -3px;
+    letter-spacing: -2;
+    text-transform: lowercase;
+}
